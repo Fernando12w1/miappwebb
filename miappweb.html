@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="javaScript/script.js"></script>
+    <title>My app</title>
+</head>
+
+<body>
+    <header> <!--Cabezera prinicpal-->
+        <h1>Musicc</h1>
+        <nav> <!--Barra de navegacion-->
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="pages/sobremi.html">Sobre mi</a></li>
+                <li><a href="pages/portafolio.html">Portafolio</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/contacto.html">contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <main> <!--contenido principal-->
+        <section> <!--seccion del contenido-->
+            <h2>Bienvenidos</h2>
+            <p>Este es el contenido principal de mi pagina</p>
+
+            <form>
+                <div class="Etiquetas">
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <label>Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                    <br>
+
+                </div>
+                <br>
+                <div class="Edad">
+                    <label>Edad:</label>
+                    <input type="number" id="edad" placeholder="Ingresa tu edad">
+                </div>
+                <br>
+
+                <div class="Preferencias">
+                    <div class="Etiquetas">
+                        <label>Artista favorito:</label>
+                        <label>Comida favorita:</label>
+                        <label>Cancion favorita:</label>
+                    </div>
+
+
+                    <div class="ImputPreferencias">
+                        <input type="text" id="artista" placeholder="Ingresa tu artista"> <br>
+                        <input type="text" id="comida" placeholder="Ingresa tu comida"> <br>
+                        <input type="text" id="musica" placeholder="Ingresa tu musica favorita"> <br>
+                    </div>
+                    <br>
+                </div>
+                <button onclick="mostrarPresentacion()">Mostrar presentacion</button>
+                <br>
+            </form>
+
+            <br>
+
+            <div id="resultado" class="resultado"></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

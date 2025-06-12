@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*como colocar fondo con html en css*/
+    background-image: url("../img/f5b279b989f9be8b1c24d43656a2a3ad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /*background: #ffffff;*/
+    color: #e1e1ee;
+}
+
+header {
+    background: #d02d52;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 5.5rem;
+}
+
+nav {
+    background: #862138;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 50px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 11px 21px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+
+}
+
+nav a:hover {
+    background: #217d86;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 2000px;
+    margin: auto;
+}
+
+section {
+    background: rgb(221, 11, 46);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(205, 15, 15, 0.1);
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #e1e1ee;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #a82953;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+form {
+    border: 2px solid;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 12px 12px 2px 1px rgba(1, 1, 1, 0.1);
+}
+
+
+.NombreApellido input {
+    width: 130px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.Edad {
+    background-color: rgb(198, 46, 89);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.Edad input {
+    width: 280px;
+    height: 25;
+    margin-left: 10px;
+}
+
+.Etiquetas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 46, 89);
+    gap: 5px
+}
+
+.InputPreferencias {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 46, 89);
+    gap: 13.5px;
+}
+
+.Preferencias {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+    background-color: rgb(198, 46, 89);
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+@media (max-width: 786px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
